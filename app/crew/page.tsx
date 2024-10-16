@@ -1,7 +1,11 @@
+import Nav from "../components/Nav"
+
 
 const page = () => {
   return (
-    <div>Crew</div>
+    <div className=" max-w-screen-2xl h-[1024px] bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop bg-cover">
+      <Nav />
+    </div>
   )
 }
 

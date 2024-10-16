@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xll: "1450px", 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        barrow: ["barrow", "sans-serif"],
       },
     },
   },
