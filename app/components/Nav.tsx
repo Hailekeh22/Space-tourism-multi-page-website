@@ -1,5 +1,6 @@
 "use client"; 
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const links = [
   {
@@ -22,9 +23,15 @@ const links = [
 
 const Nav = () => {
   const path = usePathname(); 
+  const [drawer, setDrawer] = useState(false);
+
+
+  const toggleDrawer = (a:boolean) => {
+    setDrawer(a);
+  }
 
   return (
-    <div className="relative w-full flex items-center justify-between py-6 md:py-0 lg:py-6">
+    <div className="relative w-full flex items-center justify-between py-6 md:py-0 lg:py-8">
       <div className="pl-6 lg:pl-12">
         <img src="logo.svg" alt="logo" />
       </div>
@@ -56,6 +63,46 @@ const Nav = () => {
           </ul>
         </div>
       </div>
+
+      <div className=" pr-8 md:hidden lg:hidden">
+        <a onClick={() => toggleDrawer(true)}>
+          <img src="/icon-hamburger.svg" alt="menu" />
+        </a>
+      </div>
+
+      {drawer && (
+        <div className=" md:hidden duration-300 ease-in-out absolute right-0 top-0 w-[65%] h-[100vh] bg-white/5 backdrop-blur-xl">
+          <div className="py-8 px-8">
+            <a onClick={() => toggleDrawer(false)}>
+              <img src="/icon-close.svg" className="ml-auto  w-6" alt="close" />
+            </a>
+          </div>
+          <div className="w-full py-6 pl-6">
+              <ul>
+                {
+                  links.map((item,index) => {
+                  const isActive = path === item.link;
+
+                    return (
+                      <li
+                        className={`relative font-barrow py-2 text-white text-3xl`}
+                      >
+                        <a href={item.link} className="block">
+                          {item.text}
+                        </a>
+                        <span
+                          className={`absolute right-0 top-1/4 h-1/2 w-[5px] ${
+                            isActive ? "bg-white" : "bg-transparent"
+                          }`}
+                        />
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
