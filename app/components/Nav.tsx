@@ -33,7 +33,7 @@ const Nav = () => {
   return (
     <div className="relative w-full flex items-center justify-between py-6 md:py-0 lg:py-8">
       <div className="pl-6 lg:pl-12">
-        <img src="logo.svg" alt="logo" />
+        <img className="w-[40px] md:w-[48px]" src="logo.svg" alt="logo" />
       </div>
 
       <div
