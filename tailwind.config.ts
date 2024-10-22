@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        xll: "1450px", 
+        xll: "1450px",
       },
       colors: {
         background: "var(--background)",
@@ -17,6 +17,7 @@ const config: Config = {
       },
       fontFamily: {
         barrow: ["barrow", "sans-serif"],
+        bellifair: ["bellifair", "sans-serif"],
       },
     },
   },

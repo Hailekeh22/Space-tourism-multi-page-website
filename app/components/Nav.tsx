@@ -71,7 +71,7 @@ const Nav = () => {
       </div>
 
       {drawer && (
-        <div className=" md:hidden duration-300 ease-in-out absolute right-0 top-0 w-[65%] h-[100vh] bg-white/5 backdrop-blur-xl">
+        <div className=" md:hidden duration-300 ease-in-out absolute z-10 right-0 top-0 w-[65%] h-[100vh] bg-white/5 backdrop-blur-xl">
           <div className="py-8 px-8">
             <a onClick={() => toggleDrawer(false)}>
               <img src="/icon-close.svg" className="ml-auto  w-6" alt="close" />
