@@ -17,6 +17,7 @@ const config: Config = {
       },
       fontFamily: {
         barrow: ["barrow", "sans-serif"],
+        barrowRegular: ["barrowRegular", "sans-serif"],
         bellifair: ["bellifair", "sans-serif"],
       },
     },

@@ -13,6 +13,11 @@ body {
 }
 
 @font-face {
+  font-family: "barrowRegular";
+  src: url("../app/fonts/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
   font-family: "bellifair";
   src: url("../app/fonts/Bellefair-Regular.ttf");
 }

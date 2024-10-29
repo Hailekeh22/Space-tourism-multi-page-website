@@ -28,7 +28,7 @@ const {destination, changeDestination} = useDestinationContext();
       <Nav />
 
       <div className=" w-full flex items-center justify-center md:px-20 md:py-14 lg:px-36 lg:pb-14 md:justify-start">
-        <h2 className=" text-white font-thin lg:text-2xl">
+        <h2 className=" text-white font-barrowRegular tracking-widest lg:text-2xl">
           <span className="pr-4 text-white/40">01</span>PICK YOUR DESTINATION
         </h2>
       </div>
@@ -48,7 +48,15 @@ const {destination, changeDestination} = useDestinationContext();
             <div className=" mb-5 ">
               <ul className=" flex gap-6">
                 {destinations.map((item, index) => (
-                  <li className=" text-white pb-1 border-b-4 cursor-pointer border-b-white font-bellifair" onClick={() => changeDestination(item.name)} key={index}>
+                  <li
+                    className={`cursor-pointer font-bellifair pb-1 border-b-4 hover:border-b-4 hover:border-b-white duration-500 ease-in-out ${
+                      destination.name === item.name
+                        ? "border-b-white text-white"
+                        : "border-transparent text-white/70"
+                    }`}
+                    onClick={() => changeDestination(item.name)}
+                    key={index}
+                  >
                     {item.name}
                   </li>
                 ))}
