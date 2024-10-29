@@ -6,25 +6,21 @@ import Nav from "../components/Nav";
 const destinations = [
   {
     name:"MOON",
-    action:"showMoon"
   },
   {
     name:"MARS",
-    action:"showMars"
   },
   {
     name:"EUROPA",
-    action:"showEuropa"
   },
   {
     name:"TITAN",
-    action:"showTitan"
   },
 ]
 
 const page = () => {
 
-const destination = useDestinationContext();
+const {destination, changeDestination} = useDestinationContext();
 
 
   return (
@@ -49,10 +45,10 @@ const destination = useDestinationContext();
 
         <div className="basis-[50%] lg:p-12">
           <div className="w-full flex pt-4 justify-center lg:justify-start items-center">
-            <div>
+            <div className=" mb-5 ">
               <ul className=" flex gap-6">
                 {destinations.map((item, index) => (
-                  <li className=" text-white py-3 font-bellifair" key={index}>
+                  <li className=" text-white pb-1 border-b-4 cursor-pointer border-b-white font-bellifair" onClick={() => changeDestination(item.name)} key={index}>
                     {item.name}
                   </li>
                 ))}
