@@ -65,10 +65,10 @@ const {destination, changeDestination} = useDestinationContext();
           </div>
 
           <div className="w-full flex flex-col items-center justify-center lg:items-start lg:justify-start ">
-            <h1 className=" text-white text-[2.5rem] md:text-[6rem] lg:text-[3.5rem] font-bellifair">
+            <h1 className=" text-white text-[2.5rem] md:text-[6rem] lg:text-[6rem] font-bellifair">
               {destination?.name}
             </h1>
-            <p className=" px-4 text-center lg:text-start lg:px-0 text-[1.5rem] lg:text-[1.2rem] font-barrow text-white/70">
+            <p className=" px-4 text-center lg:text-start lg:px-0 text-[1.5rem] lg:text-[1.2rem] font-barrowRegular text-white/70">
               {destination?.description}
             </p>
             <div className="w-full p-4 md:px-0 md:mt-4">

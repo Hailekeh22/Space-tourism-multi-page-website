@@ -4,7 +4,7 @@ import Nav from "../components/Nav"
 
 const page = () => {
   return (
-    <div className=" max-w-screen-2xl mx-auto h-[100vh] md:h-[850px] bg-technology-mobile bg-cover md:bg-technology-tablet lg:bg-technology-desktop">
+    <div className=" max-w-screen-2xl min-h-screen mx-auto h-[100vh] md:h-[850px] bg-technology-mobile bg-cover md:bg-technology-tablet lg:bg-technology-desktop">
       <Nav />
 
       <div className=" w-full flex items-center justify-center md:px-20 md:py-14 lg:px-36 lg:pb-14 md:justify-start">
