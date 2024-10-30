@@ -4,6 +4,7 @@ import { technology } from "@/assets/technology/technology";
 
 
 interface technologyTypes {
+    id: number,
     title: string,
     portraitImg: string,
     landScapeImg: string,
@@ -12,22 +13,29 @@ interface technologyTypes {
 
 interface technologyContextTypes {
     tech: technologyTypes;
-    changeTech: () => void;
+    changeTech: (a:number) => void;
 }
 
 const technologyContext = createContext<technologyContextTypes | null>(null);
 
-export const technologyProvider = ({children}: {children: ReactNode}) => {
+export const TechnologyProvider = ({children}: {children: ReactNode}) => {
 
     const [tech, setTech] = useState<technologyTypes>({
+        id: technology[0].id,
         title: technology[0].title,
         portraitImg: technology[0].imgPortrait,
         landScapeImg: technology[0].imgLandScape,
         description: technology[0].description
     })
 
-    const changeTech = () => {
-
+    const changeTech = (a:number) => {
+        setTech({
+          id: technology[a].id,
+          title: technology[a].title,
+          portraitImg: technology[a].imgPortrait,
+          landScapeImg: technology[a].imgLandScape,
+          description: technology[a].description,
+        });
     }
 
 
