@@ -1,10 +1,9 @@
 "use client"
-import { useState } from "react";
 import Nav from "../components/Nav"
 import { useCrewContext } from "@/context/crewContext";
 
 
-const page = () => {
+const Page = () => {
 
   const { crewMember, changeCrew } = useCrewContext();
 
@@ -75,4 +74,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page

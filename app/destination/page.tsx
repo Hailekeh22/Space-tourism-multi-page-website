@@ -18,7 +18,7 @@ const destinations = [
   },
 ]
 
-const page = () => {
+const Page = () => {
 
 const {destination, changeDestination} = useDestinationContext();
 
@@ -100,4 +100,4 @@ const {destination, changeDestination} = useDestinationContext();
   );
 }
 
-export default page
+export default Page

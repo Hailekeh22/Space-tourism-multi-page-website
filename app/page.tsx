@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import Nav from "./components/Nav";
 import HomeBtn from "./components/HomeBtn";
 

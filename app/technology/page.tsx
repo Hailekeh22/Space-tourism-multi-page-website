@@ -5,7 +5,7 @@ import { useTechnologyContext } from "@/context/technology";
 
 
 
-const page = () => {
+const Page = () => {
 
   const { tech, changeTech } = useTechnologyContext();
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -98,4 +98,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page
