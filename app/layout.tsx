@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { DestinationProvider } from "@/context/destinationContext";
+import { CrewProvider } from "@/context/crewContext";
 
 export const metadata: Metadata = {
   title: "Space tourism",
@@ -17,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <DestinationProvider>
-          {children}
+         <CrewProvider>
+            {children}
+         </CrewProvider>  
         </DestinationProvider>
       </body>
     </html>
