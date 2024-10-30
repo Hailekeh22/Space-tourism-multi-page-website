@@ -19,7 +19,7 @@ const page = () => {
     <div className=" max-w-screen-2xl min-h-screen mx-auto h-auto pb-12 bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop bg-cover">
       <Nav />
 
-      <div className=" w-full flex py-8 items-center justify-center md:px-20 md:py-14 lg:px-36 lg:pb-14 md:justify-start">
+      <div className=" w-full flex pb-8 items-center justify-center md:px-20 md:py-14 lg:px-36 lg:pb-14 md:justify-start">
         <h2 className=" text-white font-barrowRegular tracking-widest lg:text-2xl">
           <span className="pr-4 text-white/40">02</span>MEET YOUR CREW
         </h2>
@@ -31,7 +31,7 @@ const page = () => {
             <h2 className=" font-bellifair text-[20px] lg:text-[2rem] lg:mb-2 text-center lg:text-start text-white/70">
               {crewMember.job}
             </h2>
-            <h3 className=" font-bellifair text-[30px] lg:text-[56px] mb-6 text-center lg:text-start text-white">
+            <h3 className=" font-bellifair text-[26px] lg:text-[56px] mb-6 text-center lg:text-start text-white">
               {crewMember.name}
             </h3>
             <p className=" font-barrowRegular text-center lg:text-start mb-2 text-[18px] text-white/80 tracking-widest">

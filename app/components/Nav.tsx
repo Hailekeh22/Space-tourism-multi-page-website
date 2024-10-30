@@ -84,7 +84,7 @@ const Nav = () => {
                   const isActive = path === item.link;
 
                     return (
-                      <li
+                      <li key={index}
                         className={`relative font-barrow py-2 text-white text-3xl`}
                       >
                         <a href={item.link} className="block">
