@@ -1,4 +1,3 @@
-"use client"
 import Nav from "./components/Nav";
 import HomeBtn from "./components/HomeBtn";
 

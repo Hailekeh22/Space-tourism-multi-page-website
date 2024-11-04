@@ -20,6 +20,16 @@ const config: Config = {
         barrowRegular: ["barrowRegular", "sans-serif"],
         bellifair: ["bellifair", "sans-serif"],
       },
+      keyframes: {
+        spinImg: {
+          "0%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(25deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
+      },
+      animation: {
+        spinImg: "spinImg 10s linear infinite",
+      },
     },
   },
   plugins: [],

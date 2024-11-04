@@ -36,7 +36,7 @@ const {destination, changeDestination} = useDestinationContext();
         <div className=" basis-[50%] ">
           <div className=" py-10 w-full flex justify-center">
             <img
-              className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]"
+              className="w-[150px] animate-spinImg duration-300 h-[150px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]"
               src={destination?.imgSource}
               alt="destinationImg"
             />
