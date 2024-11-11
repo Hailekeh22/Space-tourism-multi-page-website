@@ -23,8 +23,7 @@ const config: Config = {
       keyframes: {
         spinImg: {
           "0%": { transform: "rotate(0deg)" },
-          "50%": { transform: "rotate(25deg)" },
-          "100%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       animation: {
