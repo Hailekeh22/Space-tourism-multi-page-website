@@ -27,7 +27,7 @@ const config: Config = {
         },
       },
       animation: {
-        spinImg: "spinImg 10s linear infinite",
+        spinImg: "spinImg 22s linear infinite",
       },
     },
   },
